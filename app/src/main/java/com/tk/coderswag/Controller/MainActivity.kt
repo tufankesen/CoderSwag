@@ -6,8 +6,7 @@ import android.widget.ArrayAdapter
 import com.tk.coderswag.Model.Category
 import com.tk.coderswag.R
 import com.tk.coderswag.Services.DataService
-//import kotlinx.android.synthetic.main.activity_main.*
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,10 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         adapter = ArrayAdapter(this,
-                android.R.layout.simple_list_item_1,
-                DataService.categories)
-        //categoryListView.adapter = adapter
+                   android.R.layout.simple_list_item_1,
+                   DataService.categories)
+
+        categoryListView.adapter = adapter
     }
-
-
 }
